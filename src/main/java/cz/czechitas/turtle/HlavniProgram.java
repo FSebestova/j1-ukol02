@@ -11,7 +11,7 @@ public class HlavniProgram {
 
 //        ctverec(45, Color.MAGENTA);
 
-//        trojuhelnikRovnostranny(60, Color.GREEN);
+//        trojuhelnikRovnostranny(90, Color.GREEN);
 
 //        obdelnik(100, 50, Color.CYAN);
 
@@ -26,7 +26,7 @@ public class HlavniProgram {
 //        snehulak();
 
 
-        masinka();
+//        masinka();
 
 
     }
@@ -70,7 +70,7 @@ public class HlavniProgram {
 
     private void zmrzlina() {
         zofka.turnRight(90);
-        kruh(30,Color.RED);
+        kruh(5,Color.RED);
         zofka.penUp();
         for (int i = 0; i <5; i++) {
             zofka.move(5);
@@ -92,11 +92,11 @@ public class HlavniProgram {
         zofka.move(velikostPrepony);
     }
 
-    private void kruh(double polomer, Color barva) {
+    private void kruh(double prumer, Color barva) {
         zofka.setPenColor(barva);
         zofka.turnRight(90);
         for (int k = 0; k < 72; k++) {
-            zofka.move(polomer);
+            zofka.move(prumer);
             zofka.turnRight(5);
         }
     }
