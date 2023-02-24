@@ -19,19 +19,23 @@ public class HlavniProgram {
 
 //        rovnoramenyPravouhlyTrojuhelnik(50, Color.ORANGE);
 
+        masinka();
 
-//        zmrzlina();
+        snehulak();
+
+        zmrzlina();
 
 
-//        snehulak();
+//
 
 
-//        masinka();
+
 
 
     }
 
     private void masinka() {
+        zofka.setLocation(885.0,470.0);
         rovnoramenyPravouhlyTrojuhelnik(70, Color.ORANGE);
         zofka.setLocation(965.0,460.0);
         zofka.turnLeft(135);
@@ -53,13 +57,13 @@ public class HlavniProgram {
         zofka.setLocation(500.0,300.0);
         kruh(3,Color.CYAN);
         zofka.turnRight(90);
-        zofka.setLocation(500.0,490.0);
+        zofka.setLocation(590.0,395.0);
         kruh(5,Color.CYAN);
-        zofka.setLocation(390.0,440.0);
+        zofka.setLocation(450.0,420.0);
         kruh(2,Color.CYAN);
-        zofka.setLocation(580.0,420.0);
+        zofka.setLocation(595.0,400.0);
         kruh(2,Color.CYAN);
-        zofka.setLocation(500.0,650.0);
+        zofka.setLocation(610.0,540.0);
         zofka.turnRight(90);
         kruh(7,Color.CYAN);
 
@@ -69,7 +73,8 @@ public class HlavniProgram {
     }
 
     private void zmrzlina() {
-        zofka.turnRight(90);
+        zofka.setLocation(150.0,300.0);
+        zofka.turnLeft(90);
         kruh(5,Color.RED);
         zofka.penUp();
         for (int i = 0; i <5; i++) {
